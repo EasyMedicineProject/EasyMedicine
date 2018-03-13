@@ -3,4 +3,45 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+
+    <servlet>
+        <servlet-name>search</servlet-name>
+        <servlet-class>Servlets.SearchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>search</servlet-name>
+        <url-pattern>/search*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>datePick</servlet-name>
+        <servlet-class>Servlets.ManageAccountServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>datePick</servlet-name>
+        <url-pattern>/datePick*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>home</servlet-name>
+        <servlet-class>Servlets.HomeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/home*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>myAccount</servlet-name>
+        <servlet-class>Servlets.MyAccountServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>myAccount</servlet-name>
+        <url-pattern>/myAccount*</url-pattern>
+    </servlet-mapping>
+
 </web-app>
