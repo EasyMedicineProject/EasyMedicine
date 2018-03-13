@@ -1,0 +1,551 @@
+/*#background{
+	background-color:transparent;
+
+background: url(../images/exampleBackground.jpg) no-repeat center center fixed ;
+    -webkit-background-size: cover; /* For WebKit
+    -moz-background-size: cover;    /* Mozilla
+    -o-background-size: cover;      /* Opera
+    background-size: cover;         /* Generic
+    position: absolute;
+	z-index:0;
+}*/
+body{
+    background-image: url("/images/uEkaqd.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar {
+    /*margin-top:2px;
+    margin-left:5px;*/
+    margin:0px;!important;
+    /*position: relative;
+    background-color: rgba(0,0,0,0);
+    background: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);*/
+    background-color:#ADE25D;
+    background: #ADE25D;
+    border-color: #ADE25D;
+    z-index:100;
+    padding:5px 10px;
+}
+
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    color: #c6c6c6;
+}
+
+#searchBox {
+    background: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    overflow: hidden;
+    outline:none;
+    width: 12em;
+    color: #505050;
+}
+
+#customMedicamentBox {
+    background: transparent;
+    background-repeat:no-repeat;
+    border: 1px solid #505050;
+    border-radius: 5px;
+    padding: 3px 3px 3px 6px;
+    margin-bottom:5px;
+    overflow: hidden;
+    outline:none;
+    width: 12em;
+    color: #505050;
+}
+
+.logo-navbar {
+    max-width: 275px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    margin-right:20px;
+}
+
+#searchBtn{
+
+    background: transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    border: none;
+    overflow: hidden;
+    outline:none;
+}
+
+
+
+#logo
+{
+    color:#81F781;
+}
+
+.navigation
+{
+    color:white;
+    font-size: 1.7em;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.button {
+    background-color: transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.button:hover{
+    color: #c6c6c6;
+}
+
+.medicamentImage {
+    display: block;
+    max-width:100%;
+    max-height:550px;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+}
+
+
+.textAreaComment{
+    max-width:100%;
+    max-height:200px;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+    background:transparent;
+    outline:none;
+    /*border:none;*/
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size:20px;
+    color:white;
+}
+
+.dateField{
+    background:transparent;
+    /*outline:none;/*
+    /*border:none;*/
+    border: 1px solid #505050;
+    margin-bottom:5px;
+    border-radius: 5px;
+    padding: 3px 3px 3px 6px;
+    text-align: center;
+    display: block;
+    font-size:17px;
+    color:#505050;
+}
+
+.recipeStyle{
+    overflow-y: auto;
+    overflow-x:hidden;
+    max-width:100%;
+    max-height:600px;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.commentStyle{
+    overflow-y: auto;
+    overflow-x:hidden;
+    max-width:100%;
+    max-height:200px;
+    min-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.userImage{
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 10px;
+    width: auto;
+    height: auto;
+    border-radius:300px;
+}
+.form-control::-webkit-input-placeholder { color: #686868; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #686868; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: #686868; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #686868; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: #686868; }  /* Microsoft Edge */
+
+#style-1::-webkit-scrollbar
+{
+    width: 12px;
+    background-color: #F5F5F5;
+}
+.avgRatingName{
+    font-size:1.5em;
+    display:inline;
+    font-family: 'Open Sans', sans-serif;
+}
+.userCommented{
+    font-size:1.5em;
+    display:block;
+    font-family: 'Open Sans', sans-serif;
+    width: 500px;
+}
+.comment{
+    font-size:1.1em;
+    display:block;
+    font-family: 'Open Sans', sans-serif;
+    width: auto;
+}
+.medicamentTimetable{
+    font-size:1.5em;
+    display:inline;
+    font-family: 'Open Sans', sans-serif;
+}
+.deleteAccountField{
+    font-size:1.2em;
+    display:inline;
+    font-family: 'Open Sans', sans-serif;
+    background: transparent;
+    background-repeat:no-repeat;
+    border: 1px solid #505050;
+    border-radius: 5px;
+    padding: 3px 3px 3px 6px;
+    margin:15px;
+    overflow: hidden;
+    outline:none;
+    width: 12em;
+    color: #505050;
+}
+.avgRatingValue{
+    font-size:2em;
+    font-weight: bold;
+    display:inline;
+    text-shadow: 1px 1px #2b2a2a;
+}
+.description{
+    font-size:115%;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b5b5b5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #878787;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+.dateclass{
+    width:100%;
+}
+
+.dateclass.placeholderclass::before{
+    width:100%;
+    content:attr(placeholder);
+    background-color:#FFFFFF;
+}
+
+.dateclass.placeholderclass:hover::before{
+    width:0%;
+    content:"";
+}
+
+.customJumbotron{
+    background: #d8d8d8;
+    border-radius: 15px;
+    padding: 35px 25px 35px 25px;
+    margin-bottom: 20px;
+}
+
+/*************** SCROLLBAR BASE CSS ***************/
+
+.scroll-wrapper {
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.scroll-wrapper > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+}
+
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.scroll-element {
+    display: none;
+}
+.scroll-element, .scroll-element div {
+    box-sizing: content-box;
+}
+
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block;
+}
+
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+    cursor: default;
+}
+
+.scroll-textarea {
+    border: 1px solid #cccccc;
+    border-top-color: #999999;
+}
+.scroll-textarea > .scroll-content {
+    overflow: hidden !important;
+}
+.scroll-textarea > .scroll-content > textarea {
+    border: none !important;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    outline: none;
+    padding: 2px;
+    position: relative !important;
+    top: 0;
+    width: 100% !important;
+}
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+
+
+
+/*************** SIMPLE INNER SCROLLBAR ***************/
+
+.scrollbar-inner > .scroll-element,
+.scrollbar-inner > .scroll-element div
+{
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.scrollbar-inner > .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.scrollbar-inner > .scroll-element.scroll-x {
+    bottom: 2px;
+    height: 8px;
+    left: 0;
+    width: 100%;
+}
+
+.scrollbar-inner > .scroll-element.scroll-y {
+    height: 100%;
+    right: 2px;
+    top: 0;
+    width: 8px;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_outer {
+    overflow: hidden;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_outer,
+.scrollbar-inner > .scroll-element .scroll-element_track,
+.scrollbar-inner > .scroll-element .scroll-bar {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_track,
+.scrollbar-inner > .scroll-element .scroll-bar {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter: alpha(opacity=40);
+    opacity: 0.4;
+}
+
+.scrollbar-inner > .scroll-element .scroll-element_track { background-color: #e0e0e0; }
+.scrollbar-inner > .scroll-element .scroll-bar { background-color: #c2c2c2; }
+.scrollbar-inner > .scroll-element:hover .scroll-bar { background-color: #919191; }
+.scrollbar-inner > .scroll-element.scroll-draggable .scroll-bar { background-color: #919191; }
+
+
+/* update scrollbar offset if both scrolls are visible */
+
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track { left: -12px; }
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_track { top: -12px; }
+
+
+.scrollbar-inner > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -12px; }
+.scrollbar-inner > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -12px; }
+
+hr.style18 {
+     height: 30px;
+     border-style: solid;
+     border-color: white;
+     border-width: 1px 0 0 0;
+     border-radius: 20px;
+ }
+hr.style18:before {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+.background{
+    margin-top:65px;
+    min-height: 1000px;
+    background: #ededed;
+    padding:30px 30px 30px 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+.dropdown {
+    /*min-width: 200px;*/
+}
+.dropdown.columns-2 {
+    min-width: 380px;
+}
+.dropdown.columns-3 {
+    min-width: 550px;
+}
+.dropdown li a {
+    padding: 5px 15px;
+    font-weight: 300;
+}
+.multi-column-dropdown {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.multi-column-dropdown.symptoms{
+    height: 560px;
+}
+.multi-column-dropdown.diseases{
+    height: 560px;
+}
+.multi-column-dropdown li a {
+    display: block;
+    clear: both;
+    line-height: 1.428571429;
+    color: #333;
+    white-space: normal;
+}
+.multi-column-dropdown li a:hover {
+    text-decoration: none;
+    color: #262626;
+    background-color: #999;
+}
+
+/*.object-index{
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 35px;
+      height: 0;
+      overflow: hidden;
+  }
+
+.object-index iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}*/
+
+@media (max-width: 767px) {
+    .dropdown.multi-column {
+        min-width: 240px !important;
+        overflow-x: hidden;
+    }
+}
+.iframeMap{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+}
+
+.objectStyle{
+    display: block;
+    min-width:300px;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+    box-sizing: border-box;
+}

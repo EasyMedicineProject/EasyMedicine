@@ -1,0 +1,58 @@
+
+
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
+}
+
+#loginDropdown{
+	font-size:1.5em;
+}
+
+#signButton{
+	width:392%;
+	margin-bottom:30px;
+}
+
+#rememberCheck{
+	margin-top:2.3em;
+}
+
+#icon {
+  display: inline-block;
+  width: 30px;
+  background-color: #81F781;
+  padding: 8px 0px 8px 8px;
+  margin-left: 10px;
+  -webkit-border-radius: 6px; 
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  color: white;
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,.09);
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  box-shadow: 1px 2px 5px rgba(0,0,0,.09); 
+  border: solid 0px #cbc9c9;
+}
